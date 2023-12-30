@@ -1,0 +1,9 @@
+.html,
+/* .html {
+  @apply font-Montserrat;
+} */
+
+.body {
+  background-color: #f2f6fe !important;
+  min-height: 100vh !important;
+}

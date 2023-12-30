@@ -1,0 +1,439 @@
+.k-grid .k-table-row.k-table-alt-row {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.k-column-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.k-grid-header,
+.k-grid-header-wrap,
+.k-grouping-header,
+.k-grid .k-table-th,
+.k-grid td,
+.k-grid .k-table-td,
+.k-grid-footer,
+.k-grid-footer-wrap,
+.k-grid-content-locked,
+.k-grid-footer-locked,
+.k-grid-header-locked,
+.k-filter-row > .k-table-th,
+.k-filter-row > td,
+.k-filter-row > .k-table-td {
+  border-color: rgba(0, 0, 0, 0.04);
+  border-right: none;
+  border-left: none;
+}
+
+h3.chakra-text {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.k-table-row.k-filter-row {
+  display: none;
+}
+.k-table-th.k-header {
+  background: #f7fafc;
+  color: #4a5568;
+}
+
+.k-grid-md td,
+.k-grid-md .k-table-td {
+  font-size: 16px;
+}
+
+.k-grid .k-table-tbody > .k-table-row:not(.k-detail-row):hover,
+.k-grid .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover {
+  background-color: #edf2f7;
+}
+
+.k-button-flat-primary {
+  color: #4656a0;
+}
+
+.chakra-modal__close-btn {
+  position: absolute !important;
+  right: 0 !important;
+  height: 62px !important;
+  top: 0 !important;
+  width: 63px !important;
+  background-color: #dcf3ff !important;
+  border-radius: 0 !important;
+}
+.chakra-modal__close-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card-radio .chakra-radio {
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-radio .chakra-radio__control {
+  display: none;
+}
+
+.card-radio .chakra-radio__label {
+  border: 1px solid #cbd5e0;
+  width: 100%;
+  margin-left: 0;
+  padding: 7px 12px;
+  border-radius: 4px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+}
+.card-radio .chakra-radio__label:hover {
+  background-color: #f2f2f2;
+}
+.card-radio .chakra-radio[data-checked=""] .chakra-radio__label {
+  background: #edf8ff;
+  display: block;
+  border: 1px solid rgb(124, 192, 255);
+  font-weight: 600;
+  color: #3182ce;
+}
+
+/* File Uploader */
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 20px;
+  border-radius: 10px;
+  border: 2px dashed #cbd5e0;
+  color: #2d3748;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: #f7fafc;
+}
+
+.drop-container:hover .drop-title {
+  color: #2d3748;
+}
+
+.drop-title {
+  color: #2d3748;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #edf2f7;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #2d3748;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #e2e8f0;
+}
+
+.no-border-for-last-child:last-child {
+  border-bottom: none;
+}
+
+@keyframes button-pop {
+  0% {
+    transform: scale(0.95, 0.98);
+  }
+
+  40% {
+    transform: scale(1.02);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+a:active {
+  animation: button-pop 0s ease-out;
+  transform: scale(0.95, 0.97);
+}
+
+.spinner {
+  animation-name: spin;
+  animation-duration: 600ms;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .k-grid td,
+.k-grid th {
+  white-space: nowrap !important;
+  width: auto;
+} */
+
+/* 
+==================================
+Kendo Grid Maintain width 
+===================================*/
+
+/* ============ AttendanceKendoNew.tsx ================= */
+
+/* Start AttendanceKendoNew.tsx ==> .attendance-whole-week */
+/* Checkbox Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(1),
+.attendance-whole-week .k-grid-table col:nth-of-type(1) {
+  width: 48px;
+}
+/* Action Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(2),
+.attendance-whole-week .k-grid-table col:nth-of-type(2) {
+  width: 144px;
+}
+/* Employee Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(3),
+.attendance-whole-week .k-grid-table col:nth-of-type(3) {
+  width: 200px;
+}
+/* Locations Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(4),
+.attendance-whole-week .k-grid-table col:nth-of-type(4) {
+  width: 240px;
+}
+/* Date Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(5),
+.attendance-whole-week .k-grid-table col:nth-of-type(5) {
+  width: 140px;
+}
+
+/* Clock In Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(6),
+.attendance-whole-week .k-grid-table col:nth-of-type(6) {
+  width: 100px;
+}
+
+/* Clock Out Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(7),
+.attendance-whole-week .k-grid-table col:nth-of-type(7) {
+  width: 120px;
+}
+/* Status Col */
+.attendance-whole-week .k-grid-header col:nth-of-type(8),
+.attendance-whole-week .k-grid-table col:nth-of-type(8) {
+  width: 140px;
+}
+/* End AttendanceKendoNew.tsx ==> .attendance-whole-week */
+
+/* ❌ */
+
+/* Start AttendanceKendoNew.tsx ==> .attendance-not-whole-week */
+/* Action Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(1),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(1) {
+  width: 100px;
+}
+/* Employee Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(2),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(2) {
+  width: 200px;
+}
+/* Locations Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(3),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(3) {
+  width: 240px;
+}
+/* Clock In Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(4),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(4) {
+  width: 100px;
+}
+
+/* Clock Out Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(5),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(5) {
+  width: 140px;
+}
+
+/* Status Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(6),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(6) {
+  width: 160px;
+}
+/* Total Working Hours Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(7),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(7) {
+  width: 200px;
+}
+/* Total Break Hours Col */
+.attendance-not-whole-week .k-grid-header col:nth-of-type(8),
+.attendance-not-whole-week .k-grid-table col:nth-of-type(8) {
+  width: 200px;
+}
+/* End AttendanceKendoNew.tsx ==> .attendance-whole-week */
+
+/* Checkbox border darken */
+.chakra-checkbox__control {
+  border-color: #b1b1b1 !important;
+}
+
+.chakra-checkbox__control[data-checked=""] {
+  border-color: #3182ce !important;
+}
+.tabber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  padding: 4px;
+  height: 40px;
+}
+.tabber label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 32px;
+  cursor: pointer;
+  will-change: transform;
+  transform: translateZ(0px);
+  transition: transform 125ms ease-in-out, filter 125ms ease-in-out;
+  color: #2d3748;
+  font-weight: 500;
+  min-width: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.tabber label:hover {
+  color: #2d3748;
+}
+.tabber input[type="radio"] {
+  display: none;
+}
+
+.tabber input[type="radio"]:checked + label {
+  transition: all 125ms ease-in-out;
+  color: white;
+}
+.tabber input[type="radio"]#working ~ .blob {
+  transform-origin: right center;
+}
+.tabber input[type="radio"]#notWorking ~ .blob {
+  transform-origin: left center;
+}
+.tabber input[type="radio"]#working:checked ~ .blob {
+  background: #2264d1;
+  -webkit-animation-name: stretchyRev;
+  animation-name: stretchyRev;
+}
+.tabber input[type="radio"]#notWorking:checked ~ .blob {
+  background-color: #2264d1;
+  -webkit-animation-name: stretchy;
+  animation-name: stretchy;
+}
+.tabber .blob {
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  position: absolute;
+  z-index: 0;
+  border-radius: 4px;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  transition: transform 150ms ease, background 150ms ease;
+  /* filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" /><feComposite in="SourceGraphic" in2="goo" operator="atop"/></filter></defs></svg>#goo'); */
+}
+
+@-webkit-keyframes stretchy {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(0) scaleX(2);
+  }
+  100% {
+    transform: translateX(100%) scaleX(1);
+  }
+}
+
+@keyframes stretchy {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+
+  100% {
+    transform: translateX(100%) scaleX(1);
+  }
+}
+@-webkit-keyframes stretchyRev {
+  0% {
+    transform: translateX(100%) scaleX(1);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+@keyframes stretchyRev {
+  0% {
+    transform: translateX(100%) scaleX(1);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+@-webkit-keyframes pulse {
+  0%,
+  50% {
+    transform: scaleX(1);
+  }
+  25%,
+  75% {
+    transform: scaleX(1.5);
+  }
+}
+@keyframes pulse {
+  0%,
+  50% {
+    transform: scaleX(1);
+  }
+  25%,
+  75% {
+    transform: scaleX(1.5);
+  }
+}
