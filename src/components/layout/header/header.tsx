@@ -116,7 +116,7 @@ export const Header: React.FC<Props> = ({
               <IconButton
                 onClick={toggleOnClick}
                 aria-label="Toggle Sidebar"
-                icon={<RiMenu2Line size="1.2rem" />}
+                icon={<RiMenu2Line size="1rem" />}
                 transform={transform}
                 variant="solid"
                 zIndex={999}
@@ -125,6 +125,7 @@ export const Header: React.FC<Props> = ({
                 _hover={{ backgroundColor: "gray.100" }}
                 color={"brandPrimary.500"}
                 borderRadius={"full"}
+                size={"sm"}
               />
             </Tooltip>
 
@@ -144,6 +145,7 @@ export const Header: React.FC<Props> = ({
                   borderRadius="full"
                   onClick={() => onCompanyDrawerOpen()}
                   py={2}
+                  size={"xs"}
                 >
                   <Box
                     display="flex"
@@ -154,8 +156,8 @@ export const Header: React.FC<Props> = ({
                     _hover={{ backgroundColor: "gray.100" }}
                     boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}
                     color="brandPrimary.400"
-                    width="40px"
-                    height="40px"
+                    width="32px"
+                    height="32px"
                     alignItems="center"
                     mr={{ base: "0px", md: 2 }}
                   >
@@ -171,7 +173,7 @@ export const Header: React.FC<Props> = ({
                         zIndex={3}
                       />
                     )}
-                    <RiBuildingLine size="1.2rem" />
+                    <RiBuildingLine size="0.8rem" />
                   </Box>
                   {browserWidth > 768 && (
                     <Flex
@@ -181,7 +183,7 @@ export const Header: React.FC<Props> = ({
                       alignItems="flex-start"
                     >
                       <Text
-                        fontSize={"sm"}
+                        fontSize={"xs"}
                         maxWidth={"200px"}
                         noOfLines={1}
                         fontWeight={600}
@@ -244,6 +246,7 @@ export const Header: React.FC<Props> = ({
                   borderRadius="full"
                   onClick={() => onCompanyDrawerOpen()}
                   py={2}
+                  size={"sm"}
                 >
                   <Box
                     display="flex"
@@ -254,8 +257,8 @@ export const Header: React.FC<Props> = ({
                     _hover={{ backgroundColor: "gray.100" }}
                     boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}
                     color="brandPrimary.400"
-                    width="40px"
-                    height="40px"
+                    width="32px"
+                    height="32px"
                     alignItems="center"
                     mr={{ base: "0px", md: 2 }}
                   >
@@ -271,7 +274,7 @@ export const Header: React.FC<Props> = ({
                         zIndex={3}
                       />
                     )}
-                    <RiBuildingLine size="1.2rem" />
+                    <RiBuildingLine size="0.8rem" />
                   </Box>
                   {browserWidth > 768 && (
                     <Flex
@@ -281,7 +284,7 @@ export const Header: React.FC<Props> = ({
                       alignItems="flex-start"
                     >
                       <Text
-                        fontSize={"sm"}
+                        fontSize={"xs"}
                         maxWidth={"200px"}
                         noOfLines={1}
                         fontWeight={600}
@@ -306,6 +309,7 @@ export const Header: React.FC<Props> = ({
                   variant="headerLinkItem"
                   boxShadow={"md"}
                   borderRadius={"full"}
+                  size={"1.5rem"}
                 >
                   <Box display="flex" justifyContent="center">
                     {/* <Avatar
@@ -559,8 +563,9 @@ export const Header: React.FC<Props> = ({
                   boxShadow={"md"}
                   px={2}
                   color="brandPrimary.500"
-                  icon={<RiSettings2Line size={"1.2rem"} />}
+                  icon={<RiSettings2Line size={"1rem"} />}
                   rounded={"full"}
+                  size={"sm"}
                 />
               </Tooltip>
               <MenuList>

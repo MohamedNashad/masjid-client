@@ -119,13 +119,16 @@ const theme = extendTheme(
     },
     tanStackTableStyles: {
       ".table": {
-        border: "1px solid #424242",
+        border: "1px solid blue",
+        width: "full"
       },
       ".tr": {
         display: "flex",
-        width: "fit-content",
+        // width: "fit-content",
+        width: "full"
+
       },
-      ".th, .td": { boxShadow: "inset 0 0 0 1px #424242" },
+      ".th, .td": { boxShadow: "inset 0 0 0 1px blue" },
       ".th": {
         position: "relative",
         display: "flex",
@@ -137,6 +140,8 @@ const theme = extendTheme(
         fontSize: "xs",
         textTransform: "uppercase",
         textAlign: "center",
+        width: "full"
+
       },
       ".td > input": {
         m: "1",

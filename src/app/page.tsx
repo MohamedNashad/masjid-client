@@ -42,7 +42,7 @@ export default function Home({ children }: any) {
         {/* {children} */}
         <Card>
           {/* <GridNextjs /> */}
-          <Box maxW={1000} mx="auto" px={6} pt={24} fontSize="sm">
+          <Box mx="auto" fontSize="sm">
             <TaskTable />
           </Box>
         </Card>

@@ -263,14 +263,16 @@ const TaskTable = () => {
                   onChange={(e) => {
                     table.setPageSize(Number(e.target.value));
                   }}
-                  width="140px"
+                  width="70px"
                 >
                   {[10, 20, 30, 40, 50].map((pageSize) => (
                     <option key={pageSize} value={pageSize}>
-                      Show {pageSize}
+                     {pageSize}
                     </option>
                   ))}
                 </Select>
+                <FormLabel flexShrink="0">Items Per Page</FormLabel>
+
               </HStack>
             </Box>
           </Flex>

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChakraProviders } from "../chakra-ui/chakra-providers";
 import { Providers } from "@/redux/provider";
-import '@progress/kendo-theme-default/dist/all.css';
+import "@progress/kendo-theme-default/dist/all.css";
 
 export const metadata: Metadata = {
   title: "workment",
@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body 
+      // style={{ backgroundColor: "#f2f6fe" }}
+      >
         <Providers>
           <ChakraProviders>{children}</ChakraProviders>
         </Providers>

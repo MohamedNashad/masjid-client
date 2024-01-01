@@ -374,9 +374,9 @@ const AttendancePage = (props: Props) => {
         </Tabs>
       </Box>
 
-      <Card>
-                <GridNextjs />
-              </Card>
+      {/* <Card>
+        <GridNextjs />
+      </Card> */}
     </>
   );
 };

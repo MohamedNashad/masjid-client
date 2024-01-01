@@ -38,16 +38,16 @@ export default function PayweekPicker({
       boxShadow={"md"}
     >
       <IconButton
-        size={"sm"}
+        size={"xs"}
         colorScheme="gray"
         variant={"solid"}
         borderRadius={"full"}
         onClick={prevOnClick}
         isDisabled={prevIsDisabled}
         aria-label="Prev Week"
-        icon={<RiArrowDropLeftLine size={"1.8rem"} />}
+        icon={<RiArrowDropLeftLine size={"1.5rem"} />}
       />
-      <FormControl w={"270px"}>
+      <FormControl w={"220px"}>
         <Select
           defaultValue={defaultValue}
           value={value}
@@ -56,20 +56,22 @@ export default function PayweekPicker({
           border={"none"}
           onChange={onChange}
           isDisabled={selectIsDisabled}
-          icon={<RiCalendar2Line />}
+          icon={<RiCalendar2Line size={"1rem"}/>}
+          size={"sm"}
+
         >
           {children}
         </Select>
       </FormControl>
       <IconButton
-        size={"sm"}
+        size={"xs"}
         isDisabled={nextDisabled}
         colorScheme="gray"
         borderRadius={"full"}
         variant={"solid"}
         onClick={nextOnClick}
         aria-label="Prev Week"
-        icon={<RiArrowDropRightLine size={"1.8rem"} />}
+        icon={<RiArrowDropRightLine size={"1.5rem"} />}
       />
     </Flex>
   );
